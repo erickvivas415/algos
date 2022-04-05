@@ -28,3 +28,18 @@ function firstPlusLength(arr) {
 a=[true,1,2,3,4]
 
 console.log(firstPlusLength(a))
+
+// Values Greater than Second: For [1,3,5,7,9,13], print values that are greater than its 2nd value. Return how many values this is.
+
+function valuesGreaterThanSecond(arr) {
+    var counter = 0;
+    for(var x=0;x<arr.length;x++) {
+        if(arr[x]>arr[1]) {
+            console.log(arr[x]);
+            counter++;
+        }
+    }
+    console.log("the total number of values greater than the second is: " + counter);
+}
+
+valuesGreaterThanSecond([1,3,5,6,9,13])
